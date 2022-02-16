@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikertopia</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <section id="banner">
+        <div class="container">
+            <div class="pic">
+                <img src="./assets/banner.png" alt="">
+            </div>
+            <div class="block">
+            </div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="container">
+            <div class="pic bgc">
+                <img src="./assets/background.png" alt="">
+            </div>
+            <div class="block">
+                <div class="info">
+                    <div class="container">
+                        <div class="heading-block">
+                            <h2>標題</h2>                    
+                            <button>Connect Wallet</button>
+                        </div>
+                        <div class="blocks">
+                            <div class="pic"><img src="./assets/google-question.gif" alt=""></div>
+                            <div class="block">
+                                <div class="number">
+                                    <p>剩餘數量 <span>9527</span> /10000 </p>
+                                </div>
+                                <div class="amount">
+                                    <span>購買數量</span>
+                                    <button onclick="btnReduce()">-</button>
+                                    <input id="num" value="0" type="text"placeholder="0">
+                                    <button onclick="btnAdd()">+</button>
+                                    <button onclick="btnMax()">MAX</button>
+                                </div>
+                                <div class="total">
+                                    <p>總價  <span id="totalNum">0.00</span>  ETH</p>
+                                </div>
+                                <button class="mint-btn">MINT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

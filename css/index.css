@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Russo+One&display=swap');
+
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #161616;
+    color: white;
+}
+h1 {
+    font-family: Russo One;
+    font-size: 72px;
+}
+h2 {
+    font-family: Orbitron;
+    font-size: 36px;    
+}
+h3 {
+    font-family: Orbitron;
+    font-size: 24px;    
+}
+p {
+    font-family: Orbitron;
+    font-size: 18px;
+    padding: 10px;
+}
+*{
+    border: none;
+    position: relative;
+    text-align: center;
+}
+.pic{
+    width: 100%;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.bgc{    
+    position: absolute;
+}
+.block{
+    margin-top: 100px;
+}
+.blind-box{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+}
+button{
+    font-family: Orbitron;
+    cursor: pointer;
+}
+
+#banner .pic{
+    max-width: 1960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* nft */
+.info {
+    /* background-color: #171717; */
+    color: white;
+}
+.info button{
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+.info .container{
+    width: 100%;
+    display: inline-block;
+}
+.info .heading-block{
+    width: 80%;
+    max-width: 600px;
+    display: inline-block;
+}
+.info .heading-block h2{
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.info .heading-block button{
+    line-height: 36px;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    color: white;
+}
+.info .blocks{    
+    display: block;
+}
+.info .pic{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    vertical-align: middle;
+    margin: 30px;
+}
+.info img{
+    width: 100%;
+    height: 100%;
+}
+.info .blocks .block{
+    display: inline-block;
+    border: solid 1px white;
+    /* height: 300px; */
+    padding: 40px 20px;
+    vertical-align: middle;
+    margin-top: 0;
+}
+.info .mint-btn{
+    background-color: #c4c4c4;
+    color: white;
+}
+.info input{
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    margin: 0px 10px;
+    color: white;
+}
+.info .block{
+    color: #c4c4c4;
+}
+.info span{
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) { 
+    h1 {
+        font-size: 36px;
+
+    }
+    h2  {
+        font-size: 21px;
+    }
+    p  {
+        font-size: 14px;
+    }
+    #nft .heading-block button{
+        bottom: 20px;
+        margin: 0px;
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 425px) { 
+    .block{
+        margin-bottom: 10vh;
+    }
+}
