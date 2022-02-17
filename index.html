@@ -7,6 +7,19 @@
     <title>Bikertopia</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js" integrity="sha512-C63V0mFzwl8KV2fRz0QJNKX0d9877urOLSUq5WUq8nUOhDl69hKdGr9mAvl57k47GNjqEMAtiufsvDnk7xs8+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+    
+    var coinbase;
+    
+    if (window.ethereum) {
+        web3 = new Web3(window.ethereum);
+    } else {
+            // Code for HttpProvider remains unchanged
+    }
+    
+    </script>
 </head>
 <body>
     <section id="banner">
@@ -28,7 +41,7 @@
                     <div class="container">
                         <div class="heading-block">
                             <h2>標題</h2>                    
-                            <button>Connect Wallet</button>
+                            <button onclick="login_In_button()"id="login_address">Connect Wallet</button>
                         </div>
                         <div class="blocks">
                             <div class="pic"><img src="./assets/google-question.gif" alt=""></div>
@@ -56,5 +69,6 @@
         </div>
     </section>
     <script src="./js/index.js"></script>
+    <script src="./js/web3/web3Index.js"></script>
 </body>
 </html>
