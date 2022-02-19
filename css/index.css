@@ -87,9 +87,13 @@ button{
 .info .heading-block button{
     display: inline-block;
     background-color: transparent;
-    color: white;
+    color: #e78257;
     margin-bottom: 100px;
     font-weight: 100;
+}
+.info .heading-block button:hover{
+    color: #eea98b;
+    transition: all 0.1s linear;
 }
 .info .pic{
     display: inline-block;
@@ -110,14 +114,14 @@ button{
 }
 .info .blocks .block{
     display: inline-block;
-    border: solid 1px white;
+    border: solid 1px #c4c4c4;
     width: 30%;
     min-width: 300px;
     min-height: 15vw;
     padding: 40px 20px;
     vertical-align: middle;
     margin-top: 0;
-    color: #c4c4c4;
+    color: white;
 }
 .info .mint-btn{
     background-color: #c4c4c4;
@@ -131,10 +135,21 @@ button{
     color: white;
 }
 .info span{
-    color: white;
+    color: #e78257;
+}
+.info #num{
+    color: #e78257;
 }
 .info .amount p{
     display: inline-block;    
+}
+.block button{
+    transition: all 0.2s linear;
+}
+.blocks button:hover{
+    box-shadow: 0px 0px 5px 1px rgb(255, 172, 172);
+    transform: scale(1.1); 
+    transition: all 0.1s linear;
 }
 
 
