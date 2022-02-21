@@ -53,7 +53,7 @@ button{
     cursor: pointer;
 }
 
-#banner .pic{
+#home .pic{
     max-width: 1960px;
     margin-left: auto;
     margin-right: auto;
@@ -167,7 +167,7 @@ button{
 }
 
 @media screen and (max-width: 425px) { 
-    #banner{
+    #home{
         padding-top: 15vh;
     }
     .block{
@@ -199,7 +199,7 @@ button{
     }
 }
 @media (min-width: 2000px) { 
-    #content .container {
+    #mint .container {
         margin-top: 200px;
     }
 }
