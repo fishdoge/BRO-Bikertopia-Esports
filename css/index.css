@@ -7,6 +7,7 @@ html,body{
     margin: 0;
     background-color: #161616;
     color: white;
+    /* line-height:5px; */
 }
 h1 {
     font-family: Russo One;
@@ -32,6 +33,7 @@ p {
 }
 .pic{
     width: 100%;
+    
 }
 img {
     width: 100%;
@@ -71,7 +73,7 @@ button{
 .nav{
     width: 100vw;
     height: 10vh;
-    background-color: rgba(128, 128, 128, 0.8);
+    background-color: rgba(85, 85, 85, 0.8);
     position: fixed;
     z-index: 1;
 }
@@ -104,7 +106,7 @@ button{
     display: inline-block;
     letter-spacing: 2px;
     margin-left: 3vw;
-    line-height: 7vh;
+    line-height: 8vh;
 }
 .nav #logo{
     width: 16vw;
@@ -168,6 +170,7 @@ button{
     min-height: 300px;
     vertical-align: middle;
     margin: 30px;
+    
 }
 .info img{
     width: 100%;
@@ -215,6 +218,9 @@ button{
     box-shadow: 0px 0px 5px 1px rgb(255, 172, 172);
     transform: scale(1.1); 
     transition: all 0.1s linear;
+}
+.main-png{
+    
 }
 
 
@@ -275,7 +281,7 @@ button{
         font-size: 20px;
         text-decoration: none;
         letter-spacing: 2px;
-        line-height: 15%;
+        line-height: 18%;
         margin: 30% auto;
         color: white;
     }
