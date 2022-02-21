@@ -11,12 +11,15 @@ var navActive=document.getElementsByClassName('nav-active')
 var navActiveShadow=document.getElementsByClassName('nav-active-shadow')
 listBtn.addEventListener('click',()=>{
     navActive[0].style.display="inline-block"
-    console.log(navActive[0].style.width="30vw")
 })
 navActiveShadow[0].addEventListener('click',()=>{
     navActive[0].style.display="none"
 })
+window.onresize=()=>{
+    navActive[0].style.display="none"
+}
 
+//btn數量
 function getNum(){
     document.getElementById('num').innerHTML=num
 }
