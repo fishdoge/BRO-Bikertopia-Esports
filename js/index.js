@@ -5,6 +5,17 @@ var btnAdd=document.getElementById('btnAdd')
 var btnMin=document.getElementById('btnMin')
 var btnMax=document.getElementById('btnMax')
 
+//nav動效
+var listBtn=document.getElementById('list-btn')
+var navActive=document.getElementsByClassName('nav-active')
+var navActiveShadow=document.getElementsByClassName('nav-active-shadow')
+listBtn.addEventListener('click',()=>{
+    navActive[0].style.display="inline-block"
+    console.log(navActive[0].style.width="30vw")
+})
+navActiveShadow[0].addEventListener('click',()=>{
+    navActive[0].style.display="none"
+})
 
 function getNum(){
     document.getElementById('num').innerHTML=num
