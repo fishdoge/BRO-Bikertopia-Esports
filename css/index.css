@@ -52,13 +52,30 @@ button{
     font-family: Orbitron;
     cursor: pointer;
 }
+.block{
+    display: inline-block;
+    width: 80%;
+    max-width: 1440px;
+    margin-top: 30vh;
+    margin-bottom: 30vh;    
+}
 
+
+/* home */
 #home .pic{
     max-width: 1960px;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* card */
+/* #card .block{
+    display: inline-block;
+    width: 80%;
+    max-width: 1440px;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+} */
 /* nft */
 .info {
     /* background-color: #171717; */
