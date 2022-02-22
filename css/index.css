@@ -20,11 +20,13 @@ h2 {
 h3 {
     font-family: Orbitron;
     font-size: 24px;    
+    color: #dd794e;
 }
 p {
     font-family: Orbitron;
     font-size: 18px;
     padding: 10px;
+    line-height: 2.5rem;
 }
 *{
     border: none;
@@ -32,8 +34,7 @@ p {
     text-align: center;
 }
 .pic{
-    width: 100%;
-    
+    width: 100%;    
 }
 img {
     width: 100%;
@@ -42,24 +43,16 @@ img {
 .bgc{    
     position: absolute;
 }
-.block{
-    margin-top: 100px;
-}
-.blind-box{
-    display: inline-block;
-    height: 300px;
-    width: 300px;
-}
 button{
     font-family: Orbitron;
     cursor: pointer;
 }
 .block{
     display: inline-block;
-    width: 80%;
+    width: 85%;
     max-width: 1440px;
-    margin-top: 30vh;
-    margin-bottom: 30vh;    
+    margin-top: 20vh;  
+    margin-bottom: 20vh;  
 }
 
 
@@ -69,10 +62,11 @@ button{
     margin-left: auto;
     margin-right: auto;
 }
+
 /*nav*/
 .nav{
     width: 100vw;
-    height: 10vh;
+    /* height: 10vh; */
     background-color: rgba(85, 85, 85, 0.8);
     position: fixed;
     z-index: 1;
@@ -91,12 +85,15 @@ button{
     display: inline-block;
 }
 .nav #wallet-btn{
+    /* border: none; */
     font-family: Orbitron;
     color:white;
-    background-color: rgba(128, 128, 128, 0.8);
+    background-color: rgba(128, 128, 128, 0.4);
+    /* background-color: transparent; */
     font-size: 25px;
     margin-left:10vw;
     border-radius: 20px;
+    padding: 5px 15px;
 }
 .nav a{
     font-family: Orbitron;
@@ -119,97 +116,206 @@ button{
 }
 
 /* card */
-/* #card .block{
+#card p{
+    text-align: left;
+}
+#card .highlight{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
     display: inline-block;
-    width: 80%;
-    max-width: 1440px;
-    margin-top: 30vh;
-    margin-bottom: 30vh;
-} */
-/* nft */
-.info {
-    /* background-color: #171717; */
+    width: 90%;
+    background-color: #da5e2a;
+}
+
+/* esports */
+#esports p{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#esports .pic{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: inline-block;
+    width: 450px;
+    height: 800px;
+    max-width: 45vw;
+    max-height: 80vw;
+}
+
+/* roadmap */
+#roadmap {
+    background-color: rgb(46, 44, 44);
+}
+#roadmap .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    /* text-align: center; */
+    outline: none;
+    font-family: Orbitron;
+    /* font-size: 15px; */
+}  
+#roadmap .active, .collapsible:hover {
+    background-color: #555;
+    /* animation: all 1s ease; */
+}  
+#roadmap .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1; 
+    color: black;
+}
+
+/* team */
+#team{    
+    background-color: rgb(37, 37, 37);
+}
+#team .block{
+    margin-top: 0;
+    max-width: 95vw;
+}
+#team .teamblocks{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#team .teamblock3{
+    display: inline-block;
+    border: solid 1px white;
+    margin: 20px;
+    vertical-align: top;
+    padding: 10px;
+    width: 25%;
+    min-height: 85vh;
+}
+#team .teamblock3 p{
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+#team .teamblock4{
+    display: inline-block;
+    border: solid 1px white;
+    margin: 20px;
+    vertical-align: top;
+    padding: 10px;
+    width: 20%;
+    min-height: 75vh;
+}
+#team .teamblock4 p{
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.6rem;
+}
+#team .superheading{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+#team .pic{
+    display: inline-block;
+    width: 90%;
+}
+#team img{
+    width: 100%;
+}
+
+/* mint */
+#mint .blind-box{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+}
+#mint {
     color: white;
 }
-.info button{
+#mint button{
     border: none;
     border-radius: 15px;
     padding: 5px 15px;
     font-weight: bold;
     margin: 0px 10px;
 }
-.info .container{
+#mint .container{
     width: 100%;
     display: inline-block;
 }
-.info .heading-block{
+#mint .heading-block{
     width: 80%;
     max-width: 600px;
     display: inline-block;
 }
-.info .heading-block h2{
-    /* display: inline-block; */
+#mint .heading-block h2{
     margin-top: 40px;
 }
-.info .heading-block button{
+#mint .heading-block button{
     display: inline-block;
     background-color: transparent;
     color: #e78257;
     margin-bottom: 100px;
     font-weight: 100;
 }
-.info .heading-block button:hover{
+#mint .heading-block button:hover{
     color: #eea98b;
     transition: all 0.1s linear;
 }
-.info .pic{
+#mint .pic{
     display: inline-block;
     width: 17vw;
     height: 17vw;
-    min-width: 300px;
+    min-width: 260px;
     min-height: 300px;
     vertical-align: middle;
-    margin: 30px;
-    
+    margin: 30px;    
 }
-.info img{
+#mint img{
     width: 100%;
     height: 100%;
 }
-.info .blocks {
+#mint .blocks {
     display: inline-block;
     width: 100%;
+    margin-bottom: 20vh;
 }
-.info .blocks .block{
+#mint .blocks .right-block{
     display: inline-block;
     border: solid 1px #c4c4c4;
     width: 30%;
-    min-width: 300px;
+    min-width: 260px;
     min-height: 15vw;
     padding: 40px 20px;
     vertical-align: middle;
     margin-top: 0;
     color: white;
 }
-.info .mint-btn{
+#mint .mint-btn{
     background-color: #c4c4c4;
     color: white;
 }
-.info input{
+#mint input{
     background-color: transparent;
     border: none;
     width: 20px;
     margin: 0px 10px;
     color: white;
 }
-.info span{
+#mint span{
     color: #e78257;
 }
-.info #num{
+#mint #num{
     color: #e78257;
 }
-.info .amount p{
+#mint .amount p{
     display: inline-block;    
+}
+#mint .bgc{
+    width: 100vw;
+    height: 60vw;
 }
 .block button{
     transition: all 0.2s linear;
@@ -219,15 +325,11 @@ button{
     transform: scale(1.1); 
     transition: all 0.1s linear;
 }
-.main-png{
-    
-}
 
 
-@media screen and (max-width: 820px) { 
+@media screen and (max-width: 900px) { 
     h1 {
         font-size: 36px;
-
     }
     h2  {
         font-size: 21px;
@@ -304,12 +406,20 @@ button{
 }
 
 @media screen and (max-width: 425px) { 
+    
+    #esports .pic{
+        width: 60vh;
+        height: 100vh;
+        max-width: 60vh;
+        max-height: 100vh;
+    }
+
     #home{
         padding-top: 10vh;
     }
-    .block{
+    /* .block{
         margin-bottom: 10vh;
-    }
+    } */
     .nav{
         height: 25vh;
     }
@@ -357,6 +467,84 @@ button{
     }
     .blocks{
         padding-bottom: 10vh;
+    }
+    #team .teamblock3{
+        margin: 20px;
+        padding: 10px;
+        width: 25%;
+        min-height: 85vh;
+    }
+    #team .teamblock3 p{
+        font-size: 16px;
+        line-height: 1.4rem;
+    }
+    #team .teamblock4{
+        margin: 20px;
+        padding: 10px;
+        width: 40%;
+        min-height: 100vh;
+    }
+    #team .teamblock4 p{
+        font-size: 16px;
+        line-height: 1.4rem;
+    }
+}
+@media screen and (max-width: 1024px) { 
+    #team .teamblock3{
+        margin: 20px;
+        padding: 10px;
+        width: 50%;
+        min-height: 85vh;
+    }
+    #team .teamblock3 p{
+        font-size: 16px;
+        line-height: 1.4rem;
+    }
+    #team .teamblock4{
+        margin: 20px;
+        padding: 10px;
+        width: 40%;
+        min-height: 80vh;
+    }
+    #team .teamblock4 p{
+        font-size: 16px;
+        line-height: 1.4rem;
+    }
+}
+@media screen and (max-width: 768px) { 
+    #team .teamblock3{        
+        width: 70%;
+        min-height: 60vh;
+    }
+    #team .teamblock4{
+        width: 70%;
+        min-height: 60vh;
+    }
+    
+    #esports .pic{
+        width: 80vw;
+        height: 110vw;
+        max-width: 80vw;
+        max-height: 110vw;
+    }
+}
+@media screen and (max-width: 425px) { 
+    #team .teamblock3{
+        width: 90%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #team .teamblock4{
+        width: 90%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }    
+    #mint .pic{
+        margin: 20px 0px;
+    }
+    #mint .blocks .right-block{
+        width: 90%;
+        padding: 40px 0px;
     }
 }
 @media screen and (max-width: 1000px) and (max-height:500px){
@@ -407,11 +595,12 @@ button{
         margin-top: 200px;
     }
 }
-@keyframes slide{
-    from{
-        width: 0vw;
+
+@keyframes slide {
+    0% {         
+        width: 0vw;; 
     }
-    to{
+    100% {        
         width: 30vw;
-    }
+     }
 }
