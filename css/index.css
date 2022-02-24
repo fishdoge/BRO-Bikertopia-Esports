@@ -344,8 +344,11 @@ button{
     width: 100%;
 }
 #mint td,th{
-    padding: 10px;
+    padding: 20px 10px;
     border: solid 1px white;
+}
+#mint th{
+    color: #e78257;
 }
 .block button{
     transition: all 0.2s linear;
@@ -363,7 +366,68 @@ button{
     vertical-align: middle;
 } 
 
-
+@media screen and (max-width: 1440px) { 
+    .nav .container{
+        padding-right: 0;
+    }
+    .nav #logo{
+        font-size: 25px;
+        margin-left: 0;
+        margin-right: 5vw;
+    }
+    .nav a{
+        font-size: 15px;
+    }
+    .nav #wallet-btn{
+        font-size: 20px;
+        margin-left: 5vw;
+    }
+    .blocks{
+        padding-bottom: 10vh;
+    }
+    #team .teamblock3{
+        margin: 20px;
+        padding: 10px;
+        width: 25%;
+        min-height: 85vh;
+    }
+    #team .teamblock3 p{
+        font-size: 16px;
+        line-height: 1.4rem;
+    }
+    #team .teamblock4{
+        margin: 20px;
+        padding: 10px;
+        width: 40%;
+        min-height: 100vh;
+    }
+    #team .teamblock4 p{
+        font-size: 16px;
+        line-height: 1.4rem;
+    }
+}
+@media screen and (max-width: 1024px) { 
+    #team .teamblock3{
+        margin: 20px;
+        padding: 10px;
+        width: 50%;
+        min-height: 85vh;
+    }
+    #team .teamblock3 p{
+        font-size: 16px;
+        line-height: 1.4rem;
+    }
+    #team .teamblock4{
+        margin: 20px;
+        padding: 10px;
+        width: 40%;
+        min-height: 80vh;
+    }
+    #team .teamblock4 p{
+        font-size: 16px;
+        line-height: 1.4rem;
+    }
+}
 @media screen and (max-width: 900px) { 
     h1 {
         font-size: 36px;
@@ -444,22 +508,32 @@ button{
         top:1vh;
     }
 }
-
+@media screen and (max-width: 768px) { 
+    #team .teamblock3{        
+        width: 70%;
+        min-height: 60vh;
+    }
+    #team .teamblock4{
+        width: 70%;
+        min-height: 60vh;
+    }
+    
+    #esports .pic{
+        width: 80vw;
+        height: 110vw;
+        max-width: 80vw;
+        max-height: 110vw;
+    }
+}
 @media screen and (max-width: 425px) { 
     
     #esports .pic{
-        width: 60vh;
-        height: 100vh;
         max-width: 60vh;
         max-height: 100vh;
     }
-
     #home{
         padding-top: 10vh;
     }
-    /* .block{
-        margin-bottom: 10vh;
-    } */
     .nav{
         height: 25vh;
     }
@@ -484,11 +558,13 @@ button{
     .nav-active #wallet-btn{
         font-size: 15px;
     }
+    #roadmap .content p{
+        line-height: 2rem;
+    }
     #list-btn{
         top:2%;
         left:9%;
     }
-
     #team .teamblock3{
         width: 90%;
         margin-left: 0px;
@@ -499,6 +575,9 @@ button{
         margin-left: 0px;
         margin-right: 0px;
     }    
+    #mint .block{
+        width: 95%;
+    }
     #mint .pic{
         margin: 20px 0px;
     }
@@ -511,98 +590,22 @@ button{
         width: 50vw;
         height: 60vw;
         margin-bottom: 5vh;
-    } 
-}
-@media screen and (max-width: 1440px) { 
-    .nav .container{
-        padding-right: 0;
+    }     
+    #mint table{
+        padding: 3px;
+        font-size: 14px;
+    }     
+    #mint th{
+        font-size: 12px;
+        padding: 10px 3px;
     }
-    .nav #logo{
-        font-size: 25px;
-        margin-left: 0;
-        margin-right: 5vw;
+    #mint td{
+        padding: 10px 3px;
     }
-    .nav a{
-        font-size: 15px;
+    #mint .rwdsmall{
+        font-size: 12px;
     }
-    .nav #wallet-btn{
-        font-size: 20px;
-        margin-left: 5vw;
-    }
-    .blocks{
-        padding-bottom: 10vh;
-    }
-    #team .teamblock3{
-        margin: 20px;
-        padding: 10px;
-        width: 25%;
-        min-height: 85vh;
-    }
-    #team .teamblock3 p{
-        font-size: 16px;
-        line-height: 1.4rem;
-    }
-    #team .teamblock4{
-        margin: 20px;
-        padding: 10px;
-        width: 40%;
-        min-height: 100vh;
-    }
-    #team .teamblock4 p{
-        font-size: 16px;
-        line-height: 1.4rem;
-    }
-}
-@media screen and (max-width: 1024px) { 
-    #team .teamblock3{
-        margin: 20px;
-        padding: 10px;
-        width: 50%;
-        min-height: 85vh;
-    }
-    #team .teamblock3 p{
-        font-size: 16px;
-        line-height: 1.4rem;
-    }
-    #team .teamblock4{
-        margin: 20px;
-        padding: 10px;
-        width: 40%;
-        min-height: 80vh;
-    }
-    #team .teamblock4 p{
-        font-size: 16px;
-        line-height: 1.4rem;
-    }
-}
-@media screen and (max-width: 768px) { 
-    #team .teamblock3{        
-        width: 70%;
-        min-height: 60vh;
-    }
-    #team .teamblock4{
-        width: 70%;
-        min-height: 60vh;
-    }
-    
-    #esports .pic{
-        width: 80vw;
-        height: 110vw;
-        max-width: 80vw;
-        max-height: 110vw;
-    }
-}
-@media screen and (max-width: 1000px) and (max-height:500px){
-    .nav{
-        height: 15vh;
-    }
-    .nav #logo{
-        font-size: 20px;
-        margin-right: 0;
-    }
-    .nav a{
-        margin-left: 1vw;
-    }
+
 }
 @media screen and (max-width: 320px) {     
     .info .pic{
@@ -610,17 +613,6 @@ button{
         width: 280px;
         margin: 0;
         margin-bottom: 50px;
-    }
-}
-@media (min-width: 1441px) {  
-    h2  {
-        font-size: 2.5rem;
-    }
-    p  {
-        font-size: 1.5rem;
-    } 
-    button {
-        font-size: 1.5rem;
     }
 }
 @media (min-width: 2000px) { 
@@ -643,6 +635,29 @@ button{
         width: 25vw;
         height: 20vw;
     } 
+}
+@media (min-width: 1441px) {  
+    h2  {
+        font-size: 2.5rem;
+    }
+    p  {
+        font-size: 1.5rem;
+    } 
+    button {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1000px) and (max-height:500px){
+    .nav{
+        height: 15vh;
+    }
+    .nav #logo{
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .nav a{
+        margin-left: 1vw;
+    }
 }
 
 @keyframes slide {
