@@ -336,9 +336,14 @@ button{
     width: 100vw;
     height: 60vw;
 }
+/* #mint img{
+    width: 100%;
+    height: 100%;
+} */
+
+/*
 #mint table{
     margin-top: 10vh;
-    /* margin-bottom: 10vh; */
     border-collapse:collapse;
     font-family: Orbitron;
     width: 100%;
@@ -350,6 +355,7 @@ button{
 #mint th{
     color: #e78257;
 }
+*/
 .block button{
     transition: all 0.2s linear;
 }
