@@ -107,7 +107,7 @@ button{
 }
 .nav #logo{
     width: 16vw;
-    font-size: 30px;
+    font-size: 28px;
     margin-left: 0;
     margin-right: 8vw;
 }
@@ -625,7 +625,7 @@ button{
 }
 @media (min-width: 2000px) { 
     .nav #logo{
-        font-size: 55px;
+        font-size: 50px;
         margin-left: 2vw;
         margin-right: 5vw;
     }
