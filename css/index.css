@@ -347,6 +347,9 @@ button{
     padding: 10px;
     border: solid 1px white;
 }
+#mint th{
+    color: #e78257;
+}
 .block button{
     transition: all 0.2s linear;
 }
@@ -488,7 +491,6 @@ button{
         top:2%;
         left:9%;
     }
-
     #team .teamblock3{
         width: 90%;
         margin-left: 0px;
@@ -499,6 +501,9 @@ button{
         margin-left: 0px;
         margin-right: 0px;
     }    
+    #mint .block{
+        width: 95%;
+    }
     #mint .pic{
         margin: 20px 0px;
     }
@@ -511,7 +516,19 @@ button{
         width: 50vw;
         height: 60vw;
         margin-bottom: 5vh;
-    } 
+    }     
+    #mint table{
+        padding: 5px;
+        font-size: 14px;
+    }     
+    #mint th{
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+    #mint td{
+        padding: 10px 5px;
+    }
+
 }
 @media screen and (max-width: 1440px) { 
     .nav .container{
