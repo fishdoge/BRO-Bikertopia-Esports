@@ -28,11 +28,14 @@ let BROClub;
 let nums;
 async function setNFT_ABI(){
     
-    BRO_Contract= "0x8Cf508F0Ea3B1c693AE66e65Fb8A200b66e64020";
+    BRO_Contract= "0xFD839075cFdDed35c716d0f2AC4936B03899ec3b";
 
     BROClub = new web3.eth.Contract(BRO_ABI,BRO_Contract);
 
     nums = await BROClub.methods.totalSupply().call();
+    totalMint = await BROClub.methods.total_Mint().call();
+
+    nums = nums - totalMint;
 
     if(nums>0){
         $("#mintbut").css("background-color","white");
@@ -51,11 +54,14 @@ async function setNFT_ABI(){
 async function MintNFT(){
 
     nums = await BROClub.methods.totalSupply().call();
+    totalMint = await BROClub.methods.total_Mint().call();
+
+    nums = nums - totalMint;
 
     $("#remaining").text(nums);
     
     if(nums > 0){
-        BROClub.methods.Mint().send({from: coinbase, value:web3.utils.toWei('0.06', 'ether'), gas: 350000 })
+        BROClub.methods.Mint(num).send({from: coinbase, value:web3.utils.toWei('0.06'*num, 'ether'), gas: 350000 })
         .then(function(error, event){ 
     
             window.location.reload();
