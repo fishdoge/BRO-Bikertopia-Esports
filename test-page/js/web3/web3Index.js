@@ -17,30 +17,33 @@ window.addEventListener('DOMContentLoaded', async () => {
     $("#wallet-btn").text(add);
     let add2 = coinbase.substring(0,5)
     $("#wallet-2").text(add2);
-
-    let nums = await BROClub.methods.total_Mint().call();
    
-    $("#totalsupply").text(nums);
  
-    //setNFT_ABI();
+    setNFT_ABI();
 })
 
 let BRO_Contract;
 let BROClub;
 
-
+let nums;
 async function setNFT_ABI(){
-
+    
     BRO_Contract= "0x8Cf508F0Ea3B1c693AE66e65Fb8A200b66e64020";
 
-    BROClub = new web3.eth.Contract(R_ABI,R_Contract);
+    BROClub = new web3.eth.Contract(BRO_ABI,BRO_Contract);
+
+    nums = await BROClub.methods.totalSupply().call();
+
+    $("#remaining").text(nums);
     //SalesVolume();
     
 }
 
 async function MintNFT(){
 
-    let nums = await BROClub.methods.total_Mint().call();
+    nums = await BROClub.methods.totalSupply().call();
+
+    $("#remaining").text(nums);
     
     if(nums <= 6666){
         BROClub.methods.mint().send({from: coinbase, value:web3.utils.toWei('0.06', 'ether'), gas: 350000 })

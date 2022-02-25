@@ -1,4 +1,4 @@
-const ABI= [
+const BRO_ABI= [
 	{
 		"inputs": [],
 		"stateMutability": "nonpayable",
