@@ -34,6 +34,15 @@ async function setNFT_ABI(){
 
     nums = await BROClub.methods.totalSupply().call();
 
+    if(nums>0){
+        $("#mintbut").css("background-color","white");
+        $("#mintbut2").text("Mint");
+    }else{
+        $("#mintbut").css("background-color"," #c4c4c4");
+        $("#mintbut2").text("Sold out");
+       
+    }
+
     $("#remaining").text(nums);
     //SalesVolume();
     
@@ -45,8 +54,8 @@ async function MintNFT(){
 
     $("#remaining").text(nums);
     
-    if(nums <= 6666){
-        BROClub.methods.mint().send({from: coinbase, value:web3.utils.toWei('0.06', 'ether'), gas: 350000 })
+    if(nums > 0){
+        BROClub.methods.Mint().send({from: coinbase, value:web3.utils.toWei('0.06', 'ether'), gas: 350000 })
         .then(function(error, event){ 
     
             window.location.reload();
