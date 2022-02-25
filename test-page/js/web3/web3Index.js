@@ -61,7 +61,8 @@ async function MintNFT(){
     $("#remaining").text(nums);
     
     if(nums > 0){
-        BROClub.methods.Mint(num).send({from: coinbase, value:web3.utils.toWei('0.06'*num, 'ether'), gas: 350000 })
+        let buy_price = (6*num)/100;
+        BROClub.methods.Mint(num).send({from: coinbase, value:web3.utils.toWei(buy_price.toString(), 'ether'), gas: 350000 })
         .then(function(error, event){ 
     
             window.location.reload();
