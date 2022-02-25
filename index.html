@@ -27,10 +27,13 @@
     <div class="nav-active">
         <ul>
             <li><a href="#card">BRO-NFT</a></li>
+            <li><a href="#mint">NFT購買</a></li>
             <li><a href="#esports">電競賽事介紹</a></li>
             <li><a href="#roadmap">路線圖</a></li>
             <li><a href="#team">團隊</a></li>
-            <li><a href="#mint">NFT購買</a></li>
+            <a href="https://discord.gg/D9mRXMk6CN" id="discord-link">
+                <img class="discord" src="./assets/discord.svg" alt="">
+            </a>
             <li><button onclick="login_In_button()" id="wallet-btn">連結錢包</button></li>
         </ul>
         <button class="nav-active-shadow"></button>
@@ -42,10 +45,13 @@
             <div id="nav-list">
                 <ul>
                     <li><a href="#card">BRO-NFT</a></li>
+                    <li><a href="#mint">NFT購買</a></li>
                     <li><a href="#esports">電競賽事介紹</a></li>
                     <li><a href="#roadmap">路線圖</a></li>
                     <li><a href="#team">團隊</a></li>
-                    <li><a href="#mint">NFT購買</a></li>
+                    <a href="https://discord.gg/D9mRXMk6CN" id="discord-link">
+                        <img class="discord" src="./assets/discord.svg" alt="">
+                    </a>
                     <li><button onclick="login_In_button()" id="wallet-btn" ><span id="wallet-2">連結錢包</span></button></li>
                 </ul>
             </div>
@@ -76,36 +82,106 @@
                     「BIKERTOPIA」原意為騎士烏托邦國度，承襲著哈雷風格以追尋自由、冒險及自我實踐的信念，打造出獨一無二的騎士烏托邦，而「BIKERTOPIA ESPORTS」即以打造台灣電競圈的烏托邦國度為宗旨，為台灣選手帶來實現自由與夢想的全新電競舞台。
                     Bikertopia Esports 的簡稱即為兄弟的縮寫 BRO，所代表的意義就是兄弟同心，排除困難，秉持著騎士不敗 榮耀長存～這就是我們的騎士精神勇往前進。
                 </p>
+                <h3>BRO-NFT 總數</h3>
+                <p>
+                    Discord 活躍用戶有機會可獲得空投盲盒，<br>
+                    直接公售，每個錢包地址限購 20 張，每張售價 0.06 Eth<br>
+                    社區保留 300 張，作為活動空投與提供未來合作方使用。<br>
+                    （如未完售，剩餘張數將於解盲盒前進行銷毀）<br><br>
+                    <span style="color: #e78257;;">【價格】</span> <br>
+                    每張售價 0.06 E     <br>
+                    <span style="color: #e78257;;">【發行時間】</span> <br>
+                    <!-- 【發行時間】<br> -->
+                    2 月 27 日 12:00（GMT+8）- 3 月 8 日 00:00（GMT+8）<br>
+                    <span style="color: #e78257;;">【解盲】</span> <br>
+                    <!-- 【解盲】<br> -->
+                    3 月 12 日 12:00（GMT+8）
+                </p>
             </div>
-            <div class="pic">
-                <img src="./assets/bro-nft.jpg" alt="">
+            <h3>BRO－NFT 解鎖抽獎</h3>
+            <div class="table">
+                <img src="assets/解鎖.jpg" alt="">
+            </div>
+            <p>
+                備註1：上述獎金以 USDT 支付，並需扣除移轉手續費金額。<br>
+                備註2：如有不正常刷單交易或非法批量註冊賬戶的交易資格，BRO Esports 保留最後決定權。
+
+            </p>
+        </div>
+    </section>
+    <!--mint-->
+    <section id="mint">
+        <div class="container">
+            <div class="block">
+                <div class="heading-block">
+                    <h2>BRO-Esports NFT</h2>                    
+                    <button onclick="login_In_button()"id="login_address">Connect Wallet</button>
+                </div>
+                <div class="blocks">
+                    <!--<video id="video" autoplay preload="auto" controls>
+                        <source src="./assets/blind-box2.mp4" type="video/mp4">
+                    </video>-->
+                    <div class="pic"><img src="./assets/blindbox2.gif"></div>
+                    <div class="right-block">
+                        <div class="number">
+                            <p>剩餘數量&nbsp<span>6666</span>&nbsp/ 6666 </p>
+                        </div>
+                        <div class="amount">
+                            <p>購買數量</p>
+                            <button id="btnReduce">-</button>
+                            <p id="num">1</p>
+                            <button id="btnAdd">+</button>
+                        </div>
+                        <div class="function-btn">
+                            <button id="btnMin">MIN</button>
+                            <button id="btnMax">MAX</button>
+                        </div>
+                        <div class="total">
+                            <p>總價 &nbsp <span id="totalNum">0.06</span> &nbsp ETH</p>
+                        </div>
+                        <button class="mint-btn">MINT</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!--esports-->
     <section id="esports">
         <div class="container">
+            <div class="esports-bgc">
+                <img src="./assets/bro-nft.jpg" alt="">
+            </div>
             <div class="block">
                 <h2>BRO Esports職業聯賽與三大賽事</h2>
-                <h3>GCS2022 職業聯賽(2~4月春季賽、6~7月夏季賽)</h3>
+                <h3>GCS 2022 職業聯賽</h3>
                 <p>
-                    Garena Challenger Series (GCS)為《Garena 傳說對決》於2017年7月展開的職業電子競技聯賽，而傳說對決 GCS 職業聯賽於2017年開賽至今即將邁入第十個賽季。本季以『Remember me』為精神標語，紀念開賽至今，各路菁英選手於賽事上造就的許多傳奇時刻，更在每一次的對決與切磋中，持續孕育出許多優秀的新興電競選手。『Remember me』呼應了新血選手尋求創造記憶，舊選手期待留下經典的決心，旨在鼓勵所有選手與玩家，與 GCS 一同在過往的輝煌上，承先啟後創造嶄新的巔峰！
-除此之外，GCS 職業聯賽也宣布 2022 年度賽事總獎金將從 700 萬提升至 1,020 萬，獎金架構將分為春季賽與夏季賽，其中各單季賽事總獎金 460 萬，外加選手激勵總獎金 100 萬。藉由增加賽事獎金來強化隊伍戰力，提升選手競爭度以及賽區對抗強度。
+                    時間：2~4月春季賽、6~7月夏季賽<br>
+                    Garena Challenger Series (GCS）為《Garena 傳說對決》於 2017 年 7 月展開的職業電子競技聯賽，而傳說對決 GCS 職業聯賽於 2017 年開賽至今即將邁入第十個賽季。本季以『Remember me』為精神標語，紀念開賽至今，各路菁英選手於賽事上造就的許多傳奇時刻，更在每一次的對決與切磋中，持續孕育出許多優秀的新興電競選手。『Remember me』呼應了新血選手尋求創造記憶，舊選手期待留下經典的決心，旨在鼓勵所有選手與玩家，與 GCS 一同在過往的輝煌上，承先啟後創造嶄新的巔峰！
                 </p>
-                <h3>AIC 國際錦標(2022年05～06月)(GCS職業聯賽第一名與第二名隊伍參與）</h3>
-                <p>參賽隊伍來自包括GCS賽區、RPL賽區、AOG賽區、ASL賽區、中國賽區、日本 賽區、韓國賽區、新馬菲賽區等八大賽區，帶來最精彩的電競盛宴。而AIC 2022的AIC國際錦標獎金更將加碼至200萬美金，為傳說對決電競職業賽事更添為競爭激烈的賽事之 一。</p>
-                
+                <h3>AIC 國際錦標</h3>
+                <p>
+                    時間：2022 年 5～6 月<br>
+                    由 GCS 職業聯賽第一名與第二名隊伍參與<br>
+                    參賽隊伍來自包括 GCS 賽區、RPL 賽區、AOG 賽區、ASL 賽區、中國賽區、日本賽區、韓國賽區、新馬菲賽區等八大賽區，帶來最精彩的電競盛宴。而今年的 AIC 國際錦標獎金更是加碼至 200 萬美金，為傳說對決的電競職業賽事添上競爭激烈的色彩。
+                </p>
                 <div class="pic">
                     <img src="./assets/AIC.jpg" alt="">
                 </div>
-                <h3>AWC世界賽(2022年10~11月，GCS職業聯賽第一～三名隊伍參與世界賽暫訂)</h3>
-                <p>AWC 2022AWC(Arena of Valor World Cup)世界盃，參賽隊伍來自包括GCS賽區、RPL賽區、AOG賽區、ASL賽區、 中國賽區、日本賽區、韓國賽區、新馬菲賽區、北美賽區等九大賽區來自全球 九大賽區的12支精銳戰隊競爭突破手遊電競賽事獎金池，總獎金為1000萬美金，一舉成為全球總獎金池最大的手遊電競賽事。
+                <h3>2022杭州亞運</h3>
+                <p>
+                    時間：2022年9月<br>
+                    於2022年3月中～4月中進行選拔<br>
+                    2022 年舉辦的第十九屆亞洲運動會，本次電競為亞運首度列入正式比賽項目。亞洲奧林匹克理事會（OCA）公告電子競技列為 2022 年在中國杭州舉辦的第 19 屆亞洲運動會的競賽運動。在電子競技部分將有 8 個競賽項目以及 2 個示範項目，電競列入正式項目，依據我國國光體育獎章辦法，亞運屬於二級賽事，奪得金牌可獲新台幣 300 萬元、銀牌 150 萬元 、銅牌 90 萬元。
+                </p>
+                <h3>AWC世界賽</h3>
+                <p>
+                    時間: 2022年10~11月<br>
+                    暫定由 GCS 職業聯賽第一～三名隊伍參與世界賽<br>
+                    2022 AWC（Arena of Valor World Cup）世界賽，參賽隊伍來自包括 GCS 賽區、RPL 賽區、AOG 賽區、ASL 賽區、 中國賽區、日本賽區、韓國賽區、新馬菲賽區、北美賽區等九大賽區，來自全球九大賽區的 12 支精銳戰隊，彼此互相競爭手遊電競賽事獎金池，總獎金為 1000 萬美金，一舉成為全球總獎金池最大的手遊電競賽事。
+                </p>
                 <div class="pic">
                     <img src="./assets/AWC.jpg" alt="">
-                </div></p>
-                <h3>2022杭州亞運（亞運選拔會於2022年三月中～四月中選拔）</h3>
-                <p>2022 年舉辦的第十九屆亞洲運動會(杭州亞運2022年9月)本次電競為亞運首度列入正式亞運項目。亞洲奧林匹克理事會（OCA）公告電子競技列為 2022 年 9 月在中國杭州舉辦的第 19 屆亞洲運動會的競賽運動。在電子競技部分將有8個競賽項目以及2個示範項目，電競列入正式項目，依據我國國光體育獎章辦法，亞運屬於 二級賽事，奪得金牌可獲 300 萬元、銀牌 150 萬元 、銅牌 90 萬元。
-                </p>
+                </div>
             </div>            
         </div>
     </section>
@@ -127,7 +203,7 @@
                     <p>
                         售出滿3666張，解鎖戰隊同樂見面會及活動<br>
                         BRO－NFT 持有人可參與BRO電競活動聚會，預計於第二季度實現<br>
-                        BRO－NFT 持有人將有機會參 BRO Esports 臺北101的高空電競聚會（臺北101 Skyline 天際線460.高空聚會，每場20人共兩場），並有機會於活動當天贏得 BRO Esports 提供的電競遊戲週邊商品。
+                        BRO－NFT 持有人將有機會參與 BRO Esports 臺北101的高空電競聚會（臺北101 Skyline 天際線460.高空聚會，每場20人共兩場），並有機會於活動當天贏得 BRO Esports 提供的電競遊戲週邊商品。
                     </p>
                 </div>
                 <button type="button" class="collapsible">第三階段 支持亞運電競選手</button>
@@ -176,8 +252,8 @@
                             <img src="assets/Mike.png" alt="">
                         </div>
                         <h3>Cofounder MIKE</h3>
-                        <p>技術聯合創始人 Mike ，曾與國際知名企業等合作。<br><br>
-                            Mike 是一位連續創業者和投資人，以創造性思維而聞名，他曾在台灣大學學習經濟企業管理，並成功管理、出售了幾家成功企業。
+                        <p>
+                            支持聯合創始人 MIKE，曾與國際知名企業等合作。MIKE是一位連續創業者和投資人，以期創造性思維而聞名，他曾在台灣大學學習企業管理，並成功管理、出售了幾家成功企業。
                         </p>
                     </div>
                     <!--
@@ -200,10 +276,10 @@
                         </div>
                         <h3>BRO PAUL 領隊</h3>
                         <p>
-                            ＊2017GCS職業聯賽亞軍（S.T)<br>
-                            ＊2017年AIC國際錦標賽，與越南的PROARMY並列季軍<br>
-                            ＊2018雅加達亞洲運動會 銀牌<br>
-                            ＊2019年AWC世界盃台灣外卡隊：八強
+                            ＊2017 GCS職業聯賽亞軍（S.T)<br>
+                            ＊2017 AIC國際錦標賽，與越南的 PROARMY 並列季軍<br>
+                            ＊2018 雅加達亞洲運動會 銀牌<br>
+                            ＊2019 AWC 世界盃台灣外卡隊：八強
                         </p>
                     </div>
                     <div class="teamblock4">
@@ -212,15 +288,17 @@
                         </div>
                         <h3>BRO NT 教練</h3>
                         <p>
+                            BRO NT（COACH）教練<br>
                             ＊2016 S1 城市賽總冠軍<br>
                             ＊2017 韓國邀請賽冠軍<br>
                             ＊2017 TGO 八強<br>
-                            ＊2018 AWCAWC 世界盃八強<br>
-                            ＊2019 S5城市賽總冠軍<br>
+                            ＊2018 AWC 世界盃八強<br>
+                            ＊2019 S5 城市賽總冠軍<br>
                             ＊2019 泰國 RPL 職業聯賽 春季賽四強<br>
                             ＊2019 AIC 亞洲盃四強<br>
                             ＊2019 泰國 RPL 職業聯賽 夏季賽亞軍<br>
                             ＊2019 AWC 世界盃台灣外卡隊：八強
+                            
                         </p>
                     </div>
                     <div class="teamblock4">
@@ -300,77 +378,16 @@
                         </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!--mint-->
-    <section id="mint">
-        <div class="container">
-            <!-- <div class="pic bgc">
-                <img src="./assets/background.png" alt="">
-            </div> -->
-            <div class="block">
-                <!-- <div class="container"> -->
-                    <div class="heading-block">
-                        <h2>BRO-Bikertopia-Esports</h2>                    
-                        <button onclick="login_In_button()"id="login_address">Connect Wallet</button>
-                    </div>
-                    <div class="blocks">
-                        <!--<video id="video" autoplay preload="auto" controls>
-                            <source src="./assets/blind-box2.mp4" type="video/mp4">
-                        </video>-->
-                        <div class="pic"><img src="./assets/blindbox2.gif"></div>
-                        <div class="right-block">
-                            <div class="number">
-                                <p>剩餘數量&nbsp<span>6666</span>&nbsp/ 6666 </p>
-                            </div>
-                            <div class="amount">
-                                <p>購買數量</p>
-                                <button id="btnReduce">-</button>
-                                <p id="num">1</p>
-                                <button id="btnAdd">+</button>
-                            </div>
-                            <div class="function-btn">
-                                <button id="btnMin">MIN</button>
-                                <button id="btnMax">MAX</button>
-                            </div>
-                            <div class="total">
-                                <p>總價 &nbsp <span id="totalNum">0.06</span> &nbsp ETH</p>
-                            </div>
-                            <button class="mint-btn">MINT</button>
-                        </div>
-                    </div>
-                    <div class="footer-block">
-                        <h3>BRO-NFT 總數</h3>
-                        <p>
-                            發行數量： 6,666 張<br>
-                            白名單 1000 名（每個錢包地址至多可購6張），每張售價 0.06 Eth<br>
-                            剩餘數量進行公售，每個錢包地址限購 20 張，每張售價 0.08 Eth<br>
-                            社區保留 300 張，作為活動空投與提供未來合作方。
-                        </p>
-                        <h3>白名單、公售 發行規則</h3>
-                        <p>發行時間<br>
-                            公   售 ： 2月 25 日 14:00（GMT+8）- 3 月 07 日 24:00（GMT+8）<br>
-                            開盲時間：3 月 12 日 12:00（GMT+8）<br>
-                            （如未完售，剩餘張數將進行銷毀）
-                        </p>
-                        <h3>如何獲取白名單</h3>
-                        <p>白名單資格獲取方式請密切關注官方Discord： https://discord.gg/D9mRXMk6CN</p>
-                        <h3>BRO－NFT 解鎖抽獎</h3>
-                        <div class="table">
-                            <img src="assets/解鎖.jpg" alt="">
-                        </div>
-                        <p>
-                            備註1：上述獎金以 USDT 支付，並需扣除移轉手續費金額。
-                            備註2：如有不正常刷單交易或非法批量註冊賬戶的交易資格，BRO Esports 保留最後決定權。
-                        </p>
-                        <h3>盲盒開獎機率</h3>
-                        <div class="table">
-                            <img src="assets/表格.jpg" alt="">
-                        </div>
-                        
-                    </div>
-                <!-- </div> -->
+                <div class="footer-block">
+                    <h3>盲盒開獎機率</h3>
+                    <p>
+                        備註1：上述獎金以 USDT 支付，並需扣除移轉手續費金額。
+                        備註2：如有不正常刷單交易或非法批量註冊賬戶的交易資格，BRO Esports 保留最後決定權。
+                    </p>     
+                    <div class="table">
+                        <img src="assets/表格.jpg" alt="">
+                    </div>               
+                </div>
             </div>
         </div>
     </section>
