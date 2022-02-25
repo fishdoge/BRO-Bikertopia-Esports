@@ -17,7 +17,10 @@ window.addEventListener('DOMContentLoaded', async () => {
     $("#wallet-btn").text(add);
     let add2 = coinbase.substring(0,5)
     $("#wallet-2").text(add2);
+
+    let nums = await BROClub.methods.total_Mint().call();
    
+    $("#totalsupply").text(nums);
  
     //setNFT_ABI();
 })
@@ -37,7 +40,7 @@ async function setNFT_ABI(){
 
 async function MintNFT(){
 
-    let nums = await BROClub.methods.TotalSupply().call();
+    let nums = await BROClub.methods.total_Mint().call();
     
     if(nums <= 6666){
         BROClub.methods.mint().send({from: coinbase, value:web3.utils.toWei('0.06', 'ether'), gas: 350000 })
