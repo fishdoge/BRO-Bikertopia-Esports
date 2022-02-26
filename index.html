@@ -116,7 +116,7 @@
             <div class="block">
                 <div class="heading-block">
                     <h2>BRO-Esports NFT</h2>                    
-                    <button onclick="login_In_button()"id="login_address">Connect Wallet</button>
+                    <button onclick="login_In_button()"id="login_address2">Connect Wallet</button>
                 </div>
                 <div class="blocks">
                     <!--<video id="video" autoplay preload="auto" controls>
@@ -125,7 +125,7 @@
                     <div class="pic"><img src="./assets/blindbox2.gif"></div>
                     <div class="right-block">
                         <div class="number">
-                            <p>剩餘數量&nbsp<span>6666</span>&nbsp/ 6666 </p>
+                            <p>剩餘數量&nbsp<span id="remaining">0</span>&nbsp/ 6666 </p>
                         </div>
                         <div class="amount">
                             <p>購買數量</p>
@@ -140,7 +140,7 @@
                         <div class="total">
                             <p>總價 &nbsp <span id="totalNum">0.06</span> &nbsp ETH</p>
                         </div>
-                        <button class="mint-btn">MINT</button>
+                        <button onclick="MintNFT()" id="mintbut" class="mint-btn"><span id="mintbut2">MINT</span></button>
                     </div>
                 </div>
             </div>
@@ -362,7 +362,7 @@
                         <p>
                             ＊2019 校園聯賽亞軍<br>
                             ＊2020 校園聯賽冠軍<br>
-                            ＊2020 六都新竹區亞軍<br>
+                            ＊2020 六都新北區亞軍<br>
                             ＊2021 AWC 世界盃 MAD 殿軍                            
                         </p>
                     </div>

@@ -31,7 +31,7 @@ function getTotalNum(i){
 }
 
 btnReduce.addEventListener('click',()=>{
-    if(num>1 && num<=50){
+    if(num>1 && num<=20){
         num--;
         getNum();
         getTotalNum(num);
@@ -39,7 +39,7 @@ btnReduce.addEventListener('click',()=>{
 })
 
 btnAdd.addEventListener('click',()=>{
-    if(num<50){
+    if(num<20){
         num++;
       
         getNum();
@@ -54,7 +54,7 @@ btnMin.addEventListener('click',()=>{
 })
 
 btnMax.addEventListener('click',()=>{
-    num=50;
+    num=20;
     getNum();
     getTotalNum(num);
 })

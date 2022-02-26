@@ -17,6 +17,9 @@ window.addEventListener('DOMContentLoaded', async () => {
     $("#wallet-btn").text(add);
     let add2 = coinbase.substring(0,5)
     $("#wallet-2").text(add2);
+
+    let add3 = coinbase.substring(0,10);
+    $("#login_address2").text(add3); 
    
  
     setNFT_ABI();
@@ -46,7 +49,7 @@ async function setNFT_ABI(){
        
     }
 
-    $("#remaining").text(nums);
+    $("#remaining").text(nums-300);
     //SalesVolume();
     
 }
@@ -58,7 +61,7 @@ async function MintNFT(){
 
     nums = nums - totalMint;
 
-    $("#remaining").text(nums);
+    $("#remaining").text(nums-300);
     
     if(nums > 0){
         let buy_price = (6*num)/100;
