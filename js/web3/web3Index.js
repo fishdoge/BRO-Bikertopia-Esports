@@ -65,7 +65,7 @@ async function setNFT_ABI(){
     //if(nums>0){
         $("#mintbut").css("background-color","white");
         $("#mintbut2").text("Mint");
-    // }else{
+    // }else if(nums == 0){
     //     $("#mintbut").css("background-color"," #c4c4c4");
     //     $("#mintbut2").text("Sold out");
        
@@ -81,7 +81,7 @@ async function MintNFT(){
 
     nums = nums - totalMint;
 
-    $("#remaining").text(nums-300);
+    //$("#remaining").text(nums-300);
     
     if(nums > 0){
         let buy_price = (6*num)/100;
