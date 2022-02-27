@@ -71,7 +71,7 @@ async function setNFT_ABI(){
     // }
 
     $("#remaining").text(nums-300);
-    //SalesVolume();
+   
     
 }
 
