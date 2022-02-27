@@ -40,17 +40,15 @@ async function setNFT_ABI(){
 
     nums = nums - totalMint;
 
-    // if(nums>0){
+    //if(nums>0){
         $("#mintbut").css("background-color","white");
         $("#mintbut2").text("Mint");
     // }else{
-        $("#mintbut").css("background-color"," #c4c4c4");
-        $("#mintbut2").text("Sold out");
+    //     $("#mintbut").css("background-color"," #c4c4c4");
+    //     $("#mintbut2").text("Sold out");
        
     // }
 
-    $("#remaining").text(nums-300);
-    //SalesVolume();
     
 }
 
