@@ -1,59 +1,62 @@
 //更改型別
-var num=Number(document.getElementById('num').innerHTML)
-var btnReduce=document.getElementById('btnReduce')
-var btnAdd=document.getElementById('btnAdd')
-var btnMin=document.getElementById('btnMin')
-var btnMax=document.getElementById('btnMax')
+var num=1;
+var btnReduce=document.getElementById('btnReduce');
+var btnAdd=document.getElementById('btnAdd');
+var btnMin=document.getElementById('btnMin');
+var btnMax=document.getElementById('btnMax');
 
 //nav動效
-var listBtn=document.getElementById('list-btn')
-var navActive=document.getElementsByClassName('nav-active')
-var navActiveShadow=document.getElementsByClassName('nav-active-shadow')
+var listBtn=document.getElementById('list-btn');
+var navActive=document.getElementsByClassName('nav-active');
+var navActiveShadow=document.getElementsByClassName('nav-active-shadow');
 listBtn.addEventListener('click',()=>{
-    navActive[0].style.display="inline-block"
+    navActive[0].style.display="inline-block";
 })
 navActiveShadow[0].addEventListener('click',()=>{
-    navActive[0].style.display="none"
+    navActive[0].style.display="none";
 })
 window.onresize=()=>{
-    navActive[0].style.display="none"
+    navActive[0].style.display="none";
 }
+
+let numbers = 1;
 
 //btn數量
 function getNum(){
-    document.getElementById('num').innerHTML=num
+    document.getElementById('num').innerHTML=num;
 }
 
-function getTotalNum(){
-    document.getElementById('totalNum').innerHTML=num*1
+function getTotalNum(i){
+    document.getElementById('totalNum').innerHTML=(i*6)/100;
 }
 
 btnReduce.addEventListener('click',()=>{
-    if(num>1 && num<51){
-        num--
-        getNum()
-        getTotalNum()
+    if(num>1 && num<=20){
+        num--;
+        getNum();
+        getTotalNum(num);
     }
 })
 
 btnAdd.addEventListener('click',()=>{
-    if(num<50){
-        num++
-        getNum()
-        getTotalNum()
+    if(num<20){
+        num++;
+      
+        getNum();
+        getTotalNum(num);
     }
 })
 
 btnMin.addEventListener('click',()=>{
-    num=1
-    getNum()
-    getTotalNum()
+    num=1;
+    getNum();
+    getTotalNum(num);
 })
 
 btnMax.addEventListener('click',()=>{
-    num=50
-    getNum()
-    getTotalNum()
+    num=20;
+    getNum();
+    getTotalNum(num);
 })
 
 //展開清單
