@@ -91,7 +91,7 @@ button{
     background-color: rgba(128, 128, 128, 0.4);
     /* background-color: transparent; */
     font-size: 25px;
-    margin-left:10vw;
+    margin-left:5vw;
     border-radius: 20px;
     padding: 5px 15px;
 }
@@ -130,6 +130,14 @@ button{
     cursor: pointer;
 }
 
+.openseas{
+    width: 5px;
+    height: 5px;
+}
+.DCLink{
+    width: 5px;
+    height: 5px;
+}
 
 /* card */
 #card .highlight{

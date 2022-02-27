@@ -72,3 +72,7 @@ for (let i = 0; i < coll.length; i++) {
     }
   });
 }
+
+function openSea(){
+    window.open('https://opensea.io/collection/bro-esports');
+}
