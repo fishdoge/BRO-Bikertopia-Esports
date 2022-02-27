@@ -55,7 +55,7 @@ async function setNFT_ABI(){
 }
 
 async function MintNFT(){
-
+    return;
     nums = await BROClub.methods.totalSupply().call();
     totalMint = await BROClub.methods.total_Mint().call();
 
