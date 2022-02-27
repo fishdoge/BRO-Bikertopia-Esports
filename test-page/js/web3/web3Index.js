@@ -25,6 +25,27 @@ window.addEventListener('DOMContentLoaded', async () => {
     setNFT_ABI();
 })
 
+
+function chage(){
+    let account = await web3.eth.getAccounts();
+   
+    coinbase = account[0];
+    let ETHbalance = await web3.eth.getBalance(coinbase);
+    ETHbalance = web3.utils.fromWei(ETHbalance, 'ether');
+
+    let add = coinbase.substring(0,5)
+    add = add +"....";
+    $("#wallet-btn").text(add);
+    let add2 = coinbase.substring(0,5)
+    $("#wallet-2").text(add2);
+
+    let add3 = coinbase.substring(0,10);
+    $("#login_address2").text(add3); 
+   
+ 
+    setNFT_ABI();
+}
+
 let BRO_Contract;
 let BROClub;
 
@@ -74,4 +95,6 @@ async function MintNFT(){
         return;
     }
 }
+
+chage();
 
