@@ -80,11 +80,6 @@ async function MintNFT(){
         alert("請連結錢包");
     }
     
-    nums = await BROClub.methods.totalSupply().call();
-    totalMint = await BROClub.methods.total_Mint().call();
-
-    nums = nums - totalMint;
-
     
 
     //$("#remaining").text(nums-300);
