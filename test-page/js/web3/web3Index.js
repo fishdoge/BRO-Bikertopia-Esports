@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 })
 
 
-function chage(){
+async function chage(){
     let account = await web3.eth.getAccounts();
    
     coinbase = account[0];
