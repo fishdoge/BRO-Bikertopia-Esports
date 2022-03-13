@@ -7,7 +7,7 @@ async function login_In_button(){
 
 
 //     let account = await web3.eth.getAccounts();
-   
+
 //     coinbase = account[0];
 //     let ETHbalance = await web3.eth.getBalance(coinbase);
 //     ETHbalance = web3.utils.fromWei(ETHbalance, 'ether');
@@ -19,15 +19,15 @@ async function login_In_button(){
 //     $("#wallet-2").text(add2);
 
 //     let add3 = coinbase.substring(0,10);
-//     $("#login_address2").text(add3); 
-   
- 
+//     $("#login_address2").text(add3);
+
+
 //     setNFT_ABI();
 // })
 
 async function chage(){
     let account = await web3.eth.getAccounts();
-   
+
     coinbase = account[0];
     let ETHbalance = await web3.eth.getBalance(coinbase);
     ETHbalance = web3.utils.fromWei(ETHbalance, 'ether');
@@ -39,9 +39,9 @@ async function chage(){
     $("#wallet-2").text(add2);
 
     let add3 = coinbase.substring(0,10);
-    $("#login_address2").text(add3); 
-   
- 
+    $("#login_address2").text(add3);
+
+
     setNFT_ABI();
 }
 
@@ -50,7 +50,7 @@ let BROClub;
 
 let nums;
 async function setNFT_ABI(){
-    
+
     BRO_Contract= "0x88e7254268f47173Bc564fa2ba2F12f5359c41C5";
 
     BROClub = new web3.eth.Contract(BRO_ABI,BRO_Contract);
@@ -60,7 +60,7 @@ async function setNFT_ABI(){
 
     nums = nums - totalMint;
 
-    $("#remaining").text(nums-300);
+    $("#remaining").text(nums);
 
     //if(nums>0){
         $("#mintbut").css("background-color","white");
@@ -68,10 +68,10 @@ async function setNFT_ABI(){
     // }else if(nums == 0){
     //     $("#mintbut").css("background-color"," #c4c4c4");
     //     $("#mintbut2").text("Sold out");
-       
+
     // }
 
-    
+
 }
 
 async function MintNFT(){
@@ -79,16 +79,16 @@ async function MintNFT(){
     if(coinbase == undefined){
         alert("請連結錢包");
     }
-    
-    
+
+
 
     //$("#remaining").text(nums-300);
-    
+
     if(nums > 0){
         let buy_price = (6*num)/100;
         BROClub.methods.Mint(num).send({from: coinbase, value:web3.utils.toWei(buy_price.toString(), 'ether'), gas: 350000 })
-        .then(function(error, event){ 
-    
+        .then(function(error, event){
+
             window.location.reload();
         });
     }else{
