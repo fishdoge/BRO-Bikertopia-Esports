@@ -62,11 +62,11 @@ async function setNFT_ABI(){
 
     $("#remaining").text(nums);
 
-    //if(nums>0){
-        $("#mintbut").css("background-color","white");
-        $("#mintbut2").text("Mint");
-    // }else if(nums == 0){
-    //     $("#mintbut").css("background-color"," #c4c4c4");
+    // //if(nums>0){
+    //     $("#mintbut").css("background-color","white");
+    //     $("#mintbut2").text("Mint");
+    // // }else if(nums == 0){
+    // //     $("#mintbut").css("background-color"," #c4c4c4");
     //     $("#mintbut2").text("Sold out");
 
     // }
@@ -75,6 +75,9 @@ async function setNFT_ABI(){
 }
 
 async function MintNFT(){
+
+
+    return;
 
     if(coinbase == undefined){
         alert("請連結錢包");
